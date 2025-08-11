@@ -108,9 +108,22 @@ If you don't know the number of positional and keyword arguments at the function
 2. **kwargs for keyword, which returns the keyword arguments as a dict
 """
 
-def example(*args, **kwargs):
-    print(f"positonal arguments :{args}")
-    print(f"keyword arguments :{kwargs}")
+# def example(*args, **kwargs):
+#     print(f"positonal arguments :{args}")
+#     print(f"keyword arguments :{kwargs}")
     
-example(1,8,6,75,9, name="eswar", age=23)
+# example(1,8,6,75,9, name="eswar", age=23)
+
+"""
+Closure is a function that has access to the outerscope function variables, even after the outer function scope has completed.
+Closures are useful for encapsulation without classes.
+Closures are used to maintain state across the function invocations without the global variables.etc.
+"""
+
+"""
+Decorators are functions that take argument as other functions and adds or alter the behaviour of the function without explicitly modifing the source code of the function.
+Decorators are used for logging.
+Decorators are used for authentication.
+Decorators are used for caching, preprocessing data, retry logic, performance measures etc.
+"""
     
