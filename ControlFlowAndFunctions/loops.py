@@ -57,11 +57,14 @@ ages = [23, 21, 25]
 # for name, age in zip(names, ages):
 #     print(f"{name} is {age} years old.")
     
-# for age in sorted(ages):
-#     print(age)
+for age in sorted(ages):
+    print(age)
     
-# for name in reversed(names):
-#     print(name)
+for name in reversed(names):
+    print(name)
+    
+zip_object = zip(names, ages)
+print(dict(zip_object))
 
 
 # for index, (name, age) in enumerate(zip(names, ages)): # zip function returns an iterable zip object which returns the tuple when iterated over, and the zip object is lazily evaluated
@@ -78,17 +81,17 @@ ages = [23, 21, 25]
 """
 generator expressions are similar to the list comprehensions, use parenthensis for generator expressions instead of square brackets.
 
-List comprehensions return entire list numbers, bu the generator expression returns a generator object, which is lazily evaluated and yields the each member when iterated over.
+List comprehensions return entire list numbers, but the generator expression returns a generator object, which is lazily evaluated and yields the each member when iterated over.
 
 generator objects can be iterated only once.
 
 """
 
-# even_generator = (num for num in range(10) if num%2==0)
-# for num in even_generator:
-#     print(num)
-# for num in even_generator:
-#     print(num)
+even_generator = (num for num in range(10) if num%2==0)
+for num in even_generator:
+    print(num)
+for num in even_generator:
+    print(num)
 
 
 """

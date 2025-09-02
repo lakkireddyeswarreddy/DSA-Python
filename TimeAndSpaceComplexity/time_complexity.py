@@ -48,9 +48,17 @@ def fibonnaci(num):
     #     fibonnaci_sequence.append(fibonnaci_sequence[i-1]+fibonnaci_sequence[i-2])
     # return fibonnaci_sequence[-1]
     
-    if num in {0,1}:
+    a=0
+    b=1
+    for i in range(2,num+1):
+        c = a+b
+        a=b
+        b=c
+    return b
+    
+    if num <=1:
         return num
-    return fibonnaci(num-1) + fibonnaci(num-2)
+    return fibonnaci(num-1) + fibonnaci(num-2) # recursive fibonnaci has O(2*n) time complexity without memoization, as there are two recursive calls for each number, and it has O(height of the recursion tree) space complexity for the call stack.
 
 print(fibonnaci(10))
 

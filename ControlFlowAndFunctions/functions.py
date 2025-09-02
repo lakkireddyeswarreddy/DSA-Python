@@ -13,7 +13,7 @@ nums = [i for i in range(5)]
 # nums = [7, 892, 45634, 21, 34, 4]
 nums=[]
 
-# print(min(nums, default="The list is empty")) # the default keyword argument is exists only when we pass the iterable as the first argument.
+print(min(nums, default="The list is empty")) # the default keyword argument exists only when we pass the iterable as the first argument.
 
 names = ["eswar", "lakki", "abhi"]
 # print(max(names, key=len)) # key is the comparsion function, by default it compares with the value.
@@ -71,7 +71,7 @@ max_age_student = reduce(lambda x,y: x if x.age > y.age else y, [eswar, abhi])
 """
 Function is a block of code that can perform a partcular task.
 Functions support reusability and modularity.
-We have regular functions that has name defined with def keyowrd and ananymous function that doesn't have named defined with lambda
+We have regular functions that has name, defined with def keyowrd and ananymous function that doesn't have name defined with lambda
 Regular functions can have multiple expressions, but lambda functions can only have one expressions but can use conditional expressions.
 Regular functions may or may not have return value, lambda functions automatically returns the expression value after computation.
 regular functions have docstring which defines what the function does, lambda function doesn't have docstring.
@@ -88,7 +88,7 @@ is_even = lambda x : x % 2 == 0
 
 """
 parameters are the variables that are used in the function definition.
-arguments are the values passed to the function call.
+arguments are the values passed to the parameters in the function call.
 
 We have three types of arguments.
 1. positional - order as same as the parameters.
