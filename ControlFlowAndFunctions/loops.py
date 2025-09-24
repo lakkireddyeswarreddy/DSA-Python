@@ -18,7 +18,7 @@ In the while loop you need to manually update the condition checking variable bu
 """
     
 # """
-# uisng while loop with the true is not a good idea, avoid this.
+# uisng while loop with the true is not a good idea, avoid that.
 # """
 
 # while True:
@@ -65,6 +65,8 @@ for name in reversed(names):
     
 zip_object = zip(names, ages)
 print(dict(zip_object))
+# print(list(zip_object))
+print(tuple(zip_object)) # once the zip object is iterated it can't be iterated again as it is exhausted.
 
 
 # for index, (name, age) in enumerate(zip(names, ages)): # zip function returns an iterable zip object which returns the tuple when iterated over, and the zip object is lazily evaluated
@@ -98,9 +100,10 @@ for num in even_generator:
 Nested loops using list comprehensions and generator expressions.
 """
 
-list_cooridnates = [(i,j) for i in range(5) for j in range(6)]
+list_cooridnates = [(i,j) for i in range(5) for j in range(6)] 
 print(list_cooridnates)
     
 coordinates = ((i,j) for i in range(1,4) for j in range(1,4))
 for cooridnate in coordinates:
     print(cooridnate)
+    pass

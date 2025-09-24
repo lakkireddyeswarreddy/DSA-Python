@@ -36,7 +36,7 @@ def count_characters(random_string):
 # print(count_characters(random_string))\
     
 """
-0 is neither positive nor negative, nut factorial of zero is considered as 1 for conventions.
+0 is neither positive nor negative, but factorial of zero is considered as 1 for conventions.
 It makes formula like n! = n * (n-1)! work even when n is 1.
 """
     

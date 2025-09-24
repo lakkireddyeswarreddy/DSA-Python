@@ -29,7 +29,7 @@ squares_iterator = map(lambda x: x**2, [i for i in range(1,6)])
 for square in squares_iterator:
     # print(square)
     pass
-# print(list(squares_iterator))
+print(list(squares_iterator)) #Exhausted after iteration
 
 coordinates_iterator = map(lambda x,y : (x,y), [i for i in range(1,6)], [i for i in range(6,11)] )
 # print(list(coordinates_iterator))
@@ -43,13 +43,13 @@ It returns the iterator and it is lazily evaluated.
 """
 
 even_iterator = filter(lambda x: x%2==0,[i for i in range(1,10)])
-# print(list(even_iterator))
+print(list(even_iterator))
 
 """
-reduce() comes from the functools package from the python 3,
+reduce() comes from the functools module from the python 3,
 it takes three argumnets, first the function with 2 arguments(accumulator, item), second the iterable, third the optional initial value of the accumulator.
 It returns the single value
-iT is used for reducing the iterable into a single value
+It is used for reducing the iterable into a single value
 """
 from functools import reduce
 
@@ -74,7 +74,7 @@ Functions support reusability and modularity.
 We have regular functions that has name, defined with def keyowrd and ananymous function that doesn't have name defined with lambda
 Regular functions can have multiple expressions, but lambda functions can only have one expressions but can use conditional expressions.
 Regular functions may or may not have return value, lambda functions automatically returns the expression value after computation.
-regular functions have docstring which defines what the function does, lambda function doesn't have docstring.
+Regular functions have docstring which defines what the function does, lambda function doesn't have docstring.
 """
 
 # def is_even(num):

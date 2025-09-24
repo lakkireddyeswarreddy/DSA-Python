@@ -6,8 +6,13 @@ nums1 = [3, 8, 4]
 nums1.remove(3) # by value, it raises a value error if the value is not found in the list. It removes the first occurence of the value.It doesn't return anything.
 nums1.pop() # by index, it raises an index error if the index is out of range, if no index is provided it removes the last element. It returns the removed element.
 del nums1[0] # by index, it raises an index error if the index is out of range. It doesn't return anything.
+
 nums = [x for x in nums if x!=2] # removes all the occurences of the value, it creates a new list and assigns to the variable.
-nums[:] = [x for x in nums if x!=2] # removes all the occurences of the value, it modifies the existing list in place.
+"""Here the space complexity is O(n) as it creates a new list, if the list is very large it may lead to memory issues.
+To avoid this we can modify the existing list in place using slicing.
+Slicing creates a new list from the existing list and assigns to the same variable, so the reference to the old list is lost and it will be eligible for garbage collection.
+"""
+nums[:] = [x for x in nums if x!=2] # removes all the occurences of the value, it creates a new list and modifies the existing list elements with the new list elements using slicing..
 
 del nums[:: 3] # removes every 3rd element from the list, it modifies the existing list in place.
 #here the step value is 3, so it starts from index 0 and removes every 3rd element.
@@ -32,17 +37,17 @@ print(f"Elements count in the nums list : {len(nums)}")
 
 
 """
-Python uses the timsort which is an hybrid of insertion and merge sort, it takes O(nlogn) in worst case and O(n) in best case
+Python uses the timsort which is an hybrid of insertion and merge sort, it has O(nlogn) time complexity in worst case and O(n) in best case
 and it takes O(n) space in worst and O(1) in best
 """
-nums.sort()
+nums.sort() # Sorts the list in place in ascending order, it doesn't return anything.
 print(f"Sorted list is {nums}")
 
 """
 This method uses the in-place swaping, it tries to swap the first with the last and the second last with the second first and so on..
 It takes O(n/2) == O(n) for reversing
 """
-nums.reverse()
+nums.reverse() 
 print(f"Reverse sorted list is {nums} ")
 
 """

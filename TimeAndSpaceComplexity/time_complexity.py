@@ -22,7 +22,7 @@ time complxeity for printing all the numbers is same in both the worst, average 
 print_nums(nums)
 
 def find_element_in_array(nums, element):
-    for num in nums: # constant time in best case if the element find at the first index linear time in worst case if the element at the last index or if the element doesn't find.
+    for num in nums: # constant time in best case if the element find at the first index, linear time in worst case if the element at the last index or if the element doesn't find.
         if num == element: # n operations in worst case , 1 operation in best case.
             print("found element")
             break

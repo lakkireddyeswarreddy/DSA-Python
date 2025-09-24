@@ -1,3 +1,8 @@
+"""
+The execution flow of the program is controlled using the conditional statements.
+In python we have if, if else, if elif else and match case statements for controlling the flow of the program based on the conditions.
+"""
+ 
  
 """
 While wriring the if elif else blocks write the most specific condition at the top.
