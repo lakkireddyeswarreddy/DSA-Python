@@ -1,5 +1,5 @@
 """
-Priorrity queue is an special type of queue in which each element is associated with a priority.
+Priority queue is an special type of queue in which each element is associated with a priority.
 Elements with higher priority are dequeued before elements with lower priority.
 If two elements have the same priority, they are dequeued in the order they were added to the queue (FIFO order).
 
